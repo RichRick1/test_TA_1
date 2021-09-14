@@ -10,8 +10,8 @@ def test_f():
     """
 #     print(f(-1))
     assert_allclose(1, f(1))
-    assert_allclose(2, f(8))
-#     assert_allclose(-1, f(-1))
+    assert_allclose(8, f(2))
+    assert_allclose(-1, f(-1))
 
 
 def test_exponential_function():
