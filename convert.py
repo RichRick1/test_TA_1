@@ -9,7 +9,7 @@ with open(fname, 'r') as f:
     lines = f.readlines()
 with open(os.path.join(path, 'problem', fname), 'w') as f:
     for line in lines:
-        if "get_ipython().run_line_magic('matplotlib', 'inline')" == line:
+        if "get_ipython()" in line:
             continue
         elif 'nbconvert --to script' in line:
             break
